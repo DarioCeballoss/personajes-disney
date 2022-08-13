@@ -14,9 +14,4 @@ public class GeneroEntity {
     private Long id;
     private String nombre;
     private String imagen;
-
-   // @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-   // @JoinColumn(name = "pelicula_id", insertable = false, updatable = false)
-   // private PeliculaEntity pelicula;
-
 }

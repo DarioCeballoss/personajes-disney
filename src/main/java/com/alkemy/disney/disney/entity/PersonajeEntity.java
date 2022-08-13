@@ -23,6 +23,6 @@ public class PersonajeEntity {
     private String historia;
 
     //peliculas asociadas
-    @ManyToMany(mappedBy = "personajes", cascade = CascadeType.ALL)
+    @ManyToMany(mappedBy = "personajes")
     private List<PeliculaEntity> peliculas = new ArrayList<>();
 }

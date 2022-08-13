@@ -27,11 +27,11 @@ public class PeliculaEntity {
 
     private Long calificacion;
     //genero
-    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    @JoinColumn(name = "genero_id", insertable = false, updatable = false)
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "genero_id")
     private GeneroEntity genero;
 
-    @Column(name = "genero_id", nullable = false)
+    @Column(name = "genero_id")
     private Long generoId;
 
     //personajes asociados
