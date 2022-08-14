@@ -28,7 +28,7 @@ public class PeliculaEntity {
     private Long calificacion;
     //genero
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "genero_id")
+    @JoinColumn(name = "genero_id", insertable=false, updatable=false)
     private GeneroEntity genero;
 
     @Column(name = "genero_id")
